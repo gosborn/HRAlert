@@ -462,7 +462,7 @@
 				DEVELOPMENT_TEAM = JY94R4DLYQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HRAlert-Watch-App-Info.plist";
+				INFOPLIST_FILE = " CenterBeat-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads your heart rate to alert you with a physical tap when your BPM exceeds your personalized threshold.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app starts a background session to continuously monitor your heart rate during stressful situations.";
@@ -499,7 +499,7 @@
 				DEVELOPMENT_TEAM = JY94R4DLYQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HRAlert-Watch-App-Info.plist";
+				INFOPLIST_FILE = " CenterBeat-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads your heart rate to alert you with a physical tap when your BPM exceeds your personalized threshold.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app starts a background session to continuously monitor your heart rate during stressful situations.";
