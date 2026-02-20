@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37C5F5E62F4816AD0022F7C5 /* HRAlert Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 37C5F5E52F4816AD0022F7C5 /* HRAlert Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37C5F5E62F4816AD0022F7C5 /* CenterBeat Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 37C5F5E52F4816AD0022F7C5 /* CenterBeat Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		37C5F6252F481C9B0022F7C5 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5F6242F481C910022F7C5 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				37C5F5E62F4816AD0022F7C5 /* HRAlert Watch App.app in Embed Watch Content */,
+				37C5F5E62F4816AD0022F7C5 /* CenterBeat Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,10 +50,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		37C5F5DF2F4816AD0022F7C5 /* HRAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		37C5F5E52F4816AD0022F7C5 /* HRAlert Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HRAlert Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37C5F5F42F4816AF0022F7C5 /* HRAlert Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HRAlert Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37C5F5FE2F4816AF0022F7C5 /* HRAlert Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HRAlert Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C5F5DF2F4816AD0022F7C5 /* CenterBeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterBeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C5F5E52F4816AD0022F7C5 /* CenterBeat Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CenterBeat Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C5F5F42F4816AF0022F7C5 /* CenterBeat Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CenterBeat Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C5F5FE2F4816AF0022F7C5 /* CenterBeat Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CenterBeat Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C5F6242F481C910022F7C5 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,10 +114,10 @@
 		37C5F5E02F4816AD0022F7C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37C5F5DF2F4816AD0022F7C5 /* HRAlert.app */,
-				37C5F5E52F4816AD0022F7C5 /* HRAlert Watch App.app */,
-				37C5F5F42F4816AF0022F7C5 /* HRAlert Watch AppTests.xctest */,
-				37C5F5FE2F4816AF0022F7C5 /* HRAlert Watch AppUITests.xctest */,
+				37C5F5DF2F4816AD0022F7C5 /* CenterBeat.app */,
+				37C5F5E52F4816AD0022F7C5 /* CenterBeat Watch App.app */,
+				37C5F5F42F4816AF0022F7C5 /* CenterBeat Watch AppTests.xctest */,
+				37C5F5FE2F4816AF0022F7C5 /* CenterBeat Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37C5F5DE2F4816AD0022F7C5 /* HRAlert */ = {
+		37C5F5DE2F4816AD0022F7C5 /* CenterBeat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37C5F60C2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert" */;
+			buildConfigurationList = 37C5F60C2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat" */;
 			buildPhases = (
 				37C5F5DD2F4816AD0022F7C5 /* Resources */,
 				37C5F60B2F4816AF0022F7C5 /* Embed Watch Content */,
@@ -137,16 +137,16 @@
 			dependencies = (
 				37C5F5E82F4816AD0022F7C5 /* PBXTargetDependency */,
 			);
-			name = HRAlert;
+			name = CenterBeat;
 			packageProductDependencies = (
 			);
 			productName = HRAlert;
-			productReference = 37C5F5DF2F4816AD0022F7C5 /* HRAlert.app */;
+			productReference = 37C5F5DF2F4816AD0022F7C5 /* CenterBeat.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		37C5F5E42F4816AD0022F7C5 /* HRAlert Watch App */ = {
+		37C5F5E42F4816AD0022F7C5 /* CenterBeat Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37C5F6082F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert Watch App" */;
+			buildConfigurationList = 37C5F6082F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat Watch App" */;
 			buildPhases = (
 				37C5F5E12F4816AD0022F7C5 /* Sources */,
 				37C5F5E22F4816AD0022F7C5 /* Frameworks */,
@@ -159,16 +159,16 @@
 			fileSystemSynchronizedGroups = (
 				37C5F5E92F4816AD0022F7C5 /* HRAlert Watch App */,
 			);
-			name = "HRAlert Watch App";
+			name = "CenterBeat Watch App";
 			packageProductDependencies = (
 			);
 			productName = "HRAlert Watch App";
-			productReference = 37C5F5E52F4816AD0022F7C5 /* HRAlert Watch App.app */;
+			productReference = 37C5F5E52F4816AD0022F7C5 /* CenterBeat Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		37C5F5F32F4816AF0022F7C5 /* HRAlert Watch AppTests */ = {
+		37C5F5F32F4816AF0022F7C5 /* CenterBeat Watch AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37C5F60F2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert Watch AppTests" */;
+			buildConfigurationList = 37C5F60F2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat Watch AppTests" */;
 			buildPhases = (
 				37C5F5F02F4816AF0022F7C5 /* Sources */,
 				37C5F5F12F4816AF0022F7C5 /* Frameworks */,
@@ -182,16 +182,16 @@
 			fileSystemSynchronizedGroups = (
 				37C5F5F72F4816AF0022F7C5 /* HRAlert Watch AppTests */,
 			);
-			name = "HRAlert Watch AppTests";
+			name = "CenterBeat Watch AppTests";
 			packageProductDependencies = (
 			);
 			productName = "HRAlert Watch AppTests";
-			productReference = 37C5F5F42F4816AF0022F7C5 /* HRAlert Watch AppTests.xctest */;
+			productReference = 37C5F5F42F4816AF0022F7C5 /* CenterBeat Watch AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		37C5F5FD2F4816AF0022F7C5 /* HRAlert Watch AppUITests */ = {
+		37C5F5FD2F4816AF0022F7C5 /* CenterBeat Watch AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37C5F6122F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert Watch AppUITests" */;
+			buildConfigurationList = 37C5F6122F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat Watch AppUITests" */;
 			buildPhases = (
 				37C5F5FA2F4816AF0022F7C5 /* Sources */,
 				37C5F5FB2F4816AF0022F7C5 /* Frameworks */,
@@ -205,11 +205,11 @@
 			fileSystemSynchronizedGroups = (
 				37C5F6012F4816AF0022F7C5 /* HRAlert Watch AppUITests */,
 			);
-			name = "HRAlert Watch AppUITests";
+			name = "CenterBeat Watch AppUITests";
 			packageProductDependencies = (
 			);
 			productName = "HRAlert Watch AppUITests";
-			productReference = 37C5F5FE2F4816AF0022F7C5 /* HRAlert Watch AppUITests.xctest */;
+			productReference = 37C5F5FE2F4816AF0022F7C5 /* CenterBeat Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 37C5F5DC2F4816AC0022F7C5 /* Build configuration list for PBXProject "HRAlert" */;
+			buildConfigurationList = 37C5F5DC2F4816AC0022F7C5 /* Build configuration list for PBXProject "CenterBeat" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -252,10 +252,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37C5F5DE2F4816AD0022F7C5 /* HRAlert */,
-				37C5F5E42F4816AD0022F7C5 /* HRAlert Watch App */,
-				37C5F5F32F4816AF0022F7C5 /* HRAlert Watch AppTests */,
-				37C5F5FD2F4816AF0022F7C5 /* HRAlert Watch AppUITests */,
+				37C5F5DE2F4816AD0022F7C5 /* CenterBeat */,
+				37C5F5E42F4816AD0022F7C5 /* CenterBeat Watch App */,
+				37C5F5F32F4816AF0022F7C5 /* CenterBeat Watch AppTests */,
+				37C5F5FD2F4816AF0022F7C5 /* CenterBeat Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,17 +319,17 @@
 /* Begin PBXTargetDependency section */
 		37C5F5E82F4816AD0022F7C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 37C5F5E42F4816AD0022F7C5 /* HRAlert Watch App */;
+			target = 37C5F5E42F4816AD0022F7C5 /* CenterBeat Watch App */;
 			targetProxy = 37C5F5E72F4816AD0022F7C5 /* PBXContainerItemProxy */;
 		};
 		37C5F5F62F4816AF0022F7C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 37C5F5E42F4816AD0022F7C5 /* HRAlert Watch App */;
+			target = 37C5F5E42F4816AD0022F7C5 /* CenterBeat Watch App */;
 			targetProxy = 37C5F5F52F4816AF0022F7C5 /* PBXContainerItemProxy */;
 		};
 		37C5F6002F4816AF0022F7C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 37C5F5E42F4816AD0022F7C5 /* HRAlert Watch App */;
+			target = 37C5F5E42F4816AD0022F7C5 /* CenterBeat Watch App */;
 			targetProxy = 37C5F5FF2F4816AF0022F7C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -463,7 +463,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HRAlert-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = HRAlert;
+				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads your heart rate to alert you with a physical tap when your BPM exceeds your personalized threshold.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app starts a background session to continuously monitor your heart rate during stressful situations.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -500,7 +500,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "HRAlert-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = HRAlert;
+				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads your heart rate to alert you with a physical tap when your BPM exceeds your personalized threshold.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app starts a background session to continuously monitor your heart rate during stressful situations.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -533,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JY94R4DLYQ;
-				INFOPLIST_KEY_CFBundleDisplayName = HRAlert;
+				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.osbornlabs.HRAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -552,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JY94R4DLYQ;
-				INFOPLIST_KEY_CFBundleDisplayName = HRAlert;
+				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.osbornlabs.HRAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,7 +583,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HRAlert Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HRAlert Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CenterBeat Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CenterBeat Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
@@ -606,7 +606,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HRAlert Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HRAlert Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CenterBeat Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CenterBeat Watch App";
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
@@ -660,7 +660,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37C5F5DC2F4816AC0022F7C5 /* Build configuration list for PBXProject "HRAlert" */ = {
+		37C5F5DC2F4816AC0022F7C5 /* Build configuration list for PBXProject "CenterBeat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37C5F6062F4816AF0022F7C5 /* Debug */,
@@ -669,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37C5F6082F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert Watch App" */ = {
+		37C5F6082F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37C5F6092F4816AF0022F7C5 /* Debug */,
@@ -678,7 +678,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37C5F60C2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert" */ = {
+		37C5F60C2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37C5F60D2F4816AF0022F7C5 /* Debug */,
@@ -687,7 +687,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37C5F60F2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert Watch AppTests" */ = {
+		37C5F60F2F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37C5F6102F4816AF0022F7C5 /* Debug */,
@@ -696,7 +696,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37C5F6122F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "HRAlert Watch AppUITests" */ = {
+		37C5F6122F4816AF0022F7C5 /* Build configuration list for PBXNativeTarget "CenterBeat Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37C5F6132F4816AF0022F7C5 /* Debug */,
