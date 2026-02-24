@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Bindable var healthManager: HealthManager
+    var isCurrentTab: Bool
     
     // Required to capture the hardware input from the Digital Crown
     @FocusState private var isFocused: Bool
@@ -42,8 +43,12 @@ struct SettingsView: View {
             isFocused = true
         }
         .onAppear {
-            // Slight delay ensures the view is in the hierarchy and ready to accept focus
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            if isCurrentTab {
+                isFocused = true
+            }
+        }
+        .onChange(of: isCurrentTab) { _, newValue in
+            if newValue {
                 isFocused = true
             }
         }

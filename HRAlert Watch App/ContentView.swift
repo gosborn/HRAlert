@@ -19,7 +19,7 @@ struct ContentView: View {
                 TabView(selection: $selectedTab) {
                     DashboardView(healthManager: healthManager)
                         .tag(0)
-                    SettingsView(healthManager: healthManager)
+                    SettingsView(healthManager: healthManager, isCurrentTab: selectedTab == 1)
                         .tag(1)
                 }
                 .tabViewStyle(.verticalPage)
