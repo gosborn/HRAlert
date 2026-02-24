@@ -31,6 +31,7 @@ class HealthManager: NSObject, HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDel
     // Controls the background session
     var workoutSession: HKWorkoutSession?
     var workoutBuilder: HKLiveWorkoutBuilder?
+    var heartRateQuery: HKAnchoredObjectQuery?
         
     // Tracks if we are actively reading the pulse
     private var _isMonitoring = false
@@ -89,13 +90,58 @@ class HealthManager: NSObject, HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDel
             try await healthStore.requestAuthorization(toShare: [], read: typesToRead)
             
             // If we reach here, the prompt was dismissed (either approved or denied)
-            // HealthKit doesn't tell us if they denied it for privacy reasons,
-            // but we can assume we are clear to proceed with setting up the session.
             DispatchQueue.main.async {
                 self.isAuthorized = true
+                self.startBackgroundQuery()
+                self.fetchLatestHeartRate()
             }
         } catch {
             print("Error requesting HealthKit authorization: \(error.localizedDescription)")
+        }
+    }
+    
+    func fetchLatestHeartRate() {
+        guard let sampleType = HKQuantityType.quantityType(forIdentifier: .heartRate) else { return }
+        
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
+        let query = HKSampleQuery(sampleType: sampleType, predicate: nil, limit: 1, sortDescriptors: [sortDescriptor]) { (query, results, error) in
+            if let sample = results?.first as? HKQuantitySample {
+                let unit = HKUnit.count().unitDivided(by: HKUnit.minute())
+                let value = sample.quantity.doubleValue(for: unit)
+                DispatchQueue.main.async {
+                    self.currentHeartRate = value
+                }
+            }
+        }
+        healthStore.execute(query)
+    }
+    
+    func startBackgroundQuery() {
+        guard let sampleType = HKObjectType.quantityType(forIdentifier: .heartRate) else { return }
+        
+        let query = HKAnchoredObjectQuery(type: sampleType, predicate: nil, anchor: nil, limit: HKObjectQueryNoLimit) { [weak self] (query, samples, deletedObjects, newAnchor, error) in
+            self?.updateHeartRate(samples: samples)
+        }
+        
+        query.updateHandler = { [weak self] (query, samples, deletedObjects, newAnchor, error) in
+            self?.updateHeartRate(samples: samples)
+        }
+        
+        healthStore.execute(query)
+        self.heartRateQuery = query
+    }
+    
+    private func updateHeartRate(samples: [HKSample]?) {
+        guard let heartRateSamples = samples as? [HKQuantitySample], let lastSample = heartRateSamples.last else { return }
+        
+        let unit = HKUnit.count().unitDivided(by: HKUnit.minute())
+        let value = lastSample.quantity.doubleValue(for: unit)
+        
+        DispatchQueue.main.async {
+            self.currentHeartRate = value
+            if self.isMonitoring {
+                self.evaluateHeartRate()
+            }
         }
     }
     

@@ -15,7 +15,7 @@ struct DashboardView: View {
             // A circular gauge mapping BPM from a resting 40 up to an agitated 200
             Gauge(value: healthManager.currentHeartRate, in: 40...200) {
                 Image(systemName: "heart.fill")
-                    .foregroundColor(healthManager.isMonitoring ? .red : .gray)
+                    .foregroundColor(.red)
             } currentValueLabel: {
                 Text("\(Int(healthManager.currentHeartRate))")
                     .font(.system(.title, design: .rounded).bold())

@@ -58,6 +58,10 @@ struct ContentView: View {
             // Still attempt to show the official Apple prompt automatically on first launch
             if !healthManager.isAuthorized {
                 await healthManager.requestAuthorization()
+            } else {
+                // If already authorized, start our observers immediately
+                healthManager.fetchLatestHeartRate()
+                healthManager.startBackgroundQuery()
             }
         }
     }
