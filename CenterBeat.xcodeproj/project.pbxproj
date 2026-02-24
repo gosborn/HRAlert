@@ -51,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		374665702F4D6ECB00BD7184 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		374665702F4D6ECB00BD7184 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		37C5F5DF2F4816AD0022F7C5 /* CenterBeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterBeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C5F5E52F4816AD0022F7C5 /* CenterBeat Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CenterBeat Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C5F5F42F4816AF0022F7C5 /* CenterBeat Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CenterBeat Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
