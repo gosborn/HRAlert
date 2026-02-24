@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374665712F4D6ECB00BD7184 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374665702F4D6ECB00BD7184 /* HealthKit.framework */; };
 		37C5F5E62F4816AD0022F7C5 /* CenterBeat Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 37C5F5E52F4816AD0022F7C5 /* CenterBeat Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		37C5F6252F481C9B0022F7C5 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5F6242F481C910022F7C5 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		374665702F4D6ECB00BD7184 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		37C5F5DF2F4816AD0022F7C5 /* CenterBeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterBeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C5F5E52F4816AD0022F7C5 /* CenterBeat Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CenterBeat Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C5F5F42F4816AF0022F7C5 /* CenterBeat Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CenterBeat Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374665712F4D6ECB00BD7184 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3746656F2F4D6ECA00BD7184 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				374665702F4D6ECB00BD7184 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37C5F5D82F4816AC0022F7C5 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +118,7 @@
 				37C5F5E92F4816AD0022F7C5 /* HRAlert Watch App */,
 				37C5F5F72F4816AF0022F7C5 /* HRAlert Watch AppTests */,
 				37C5F6012F4816AF0022F7C5 /* HRAlert Watch AppUITests */,
+				3746656F2F4D6ECA00BD7184 /* Frameworks */,
 				37C5F5E02F4816AD0022F7C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -465,8 +477,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CenterBeat-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads your heart rate to alert you with a physical tap when your BPM exceeds your personalized threshold.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app starts a background session to continuously monitor your heart rate during stressful situations.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your heart rate is used to provide alerts during high-stress moments.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Your heart rate is used to provide alerts during high-stress moments.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,8 +516,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CenterBeat-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = CenterBeat;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app reads your heart rate to alert you with a physical tap when your BPM exceeds your personalized threshold.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app starts a background session to continuously monitor your heart rate during stressful situations.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your heart rate is used to provide alerts during high-stress moments.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Your heart rate is used to provide alerts during high-stress moments.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (

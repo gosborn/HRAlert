@@ -22,25 +22,30 @@ struct SettingsView: View {
             Text("\(Int(healthManager.heartRateThreshold)) BPM")
                 .font(.system(.title, design: .rounded).bold())
                 .foregroundColor(.red)
-                .focusable()
-                .focused($isFocused) // Bind the focus state
-                .digitalCrownRotation(
-                    $healthManager.heartRateThreshold,
-                    from: 80.0,
-                    through: 180.0,
-                    by: 5.0, // Steps by 5 BPM per crown click
-                    sensitivity: .low,
-                    isContinuous: false,
-                    isHapticFeedbackEnabled: true
-                )
             
             Text("Scroll crown to adjust")
                 .font(.caption2)
                 .foregroundColor(.gray)
         }
-        .onAppear {
-            // Auto-focus when they swipe to this tab so the crown works immediately
+        .focusable()
+        .focused($isFocused)
+        .digitalCrownRotation(
+            $healthManager.heartRateThreshold,
+            from: 80.0,
+            through: 180.0,
+            by: 5.0, // Steps by 5 BPM per crown click
+            sensitivity: .medium,
+            isContinuous: false,
+            isHapticFeedbackEnabled: true
+        )
+        .onTapGesture {
             isFocused = true
+        }
+        .onAppear {
+            // Slight delay ensures the view is in the hierarchy and ready to accept focus
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                isFocused = true
+            }
         }
     }
 }

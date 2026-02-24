@@ -15,25 +15,61 @@ class HealthManager: NSObject, HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDel
     let healthStore = HKHealthStore()
     
     // Tracks whether the user has granted us access
-    var isAuthorized = false
+    private var _isAuthorized = false
+    var isAuthorized: Bool {
+        get {
+            access(keyPath: \.isAuthorized)
+            return _isAuthorized
+        }
+        set {
+            withMutation(keyPath: \.isAuthorized) {
+                _isAuthorized = newValue
+            }
+        }
+    }
     
     // Controls the background session
     var workoutSession: HKWorkoutSession?
     var workoutBuilder: HKLiveWorkoutBuilder?
         
     // Tracks if we are actively reading the pulse
-    var isMonitoring = false
+    private var _isMonitoring = false
+    var isMonitoring: Bool {
+        get {
+            access(keyPath: \.isMonitoring)
+            return _isMonitoring
+        }
+        set {
+            withMutation(keyPath: \.isMonitoring) {
+                _isMonitoring = newValue
+            }
+        }
+    }
     
     // New variables for our UI and logic
-    var currentHeartRate: Double = 0.0
+    private var _currentHeartRate: Double = 0.0
+    var currentHeartRate: Double {
+        get {
+            access(keyPath: \.currentHeartRate)
+            return _currentHeartRate
+        }
+        set {
+            withMutation(keyPath: \.currentHeartRate) {
+                _currentHeartRate = newValue
+            }
+        }
+    }
     var heartRateThreshold: Double {
         get {
+            access(keyPath: \.heartRateThreshold)
             let savedValue = UserDefaults.standard.double(forKey: "HeartRateThreshold")
             // Return 110.0 as the default if they haven't set a custom one yet
             return savedValue == 0 ? 110.0 : savedValue
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: "HeartRateThreshold")
+            withMutation(keyPath: \.heartRateThreshold) {
+                UserDefaults.standard.set(newValue, forKey: "HeartRateThreshold")
+            }
         }
     }
     var lastAlertTime: Date?

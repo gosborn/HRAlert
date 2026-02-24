@@ -9,15 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var healthManager = HealthManager()
+    @State private var selectedTab = 0
 
     var body: some View {
         Group {
             if healthManager.isAuthorized {
                 // MARK: - The Approved State
                 // They granted permission, so show the actual app
-                TabView {
+                TabView(selection: $selectedTab) {
                     DashboardView(healthManager: healthManager)
+                        .tag(0)
                     SettingsView(healthManager: healthManager)
+                        .tag(1)
                 }
                 .tabViewStyle(.verticalPage)
                 
